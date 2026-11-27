@@ -22,7 +22,7 @@ const projects = [
     impact: "",
     tech: ["Flutter", "Dart"],
     image: "",
-    github: "https://github.com/tekera0/rgb-color-game",
+    github: "https://github.com/tekera0/RGB-Color-Game",
     demo: ""
   },
   {
