@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tanushree — Portfolio</title>
+  <meta name="description" content="Projects by Tanushree, student developer in Bengaluru.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" id="stars" aria-hidden="true" title="Scroll to raise your rating">
+    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+  </div>
+
+  <header class="hero" id="hero">
+    <div class="sun" data-depth="12"></div>
+    <svg class="palms" data-depth="26" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <g fill="none" stroke="#12051f" stroke-linecap="round">
+        <g transform="translate(120 0)">
+          <path d="M60 420 Q70 280 110 150" stroke-width="12"/>
+          <path d="M110 150 Q50 90 -20 130 M110 150 Q60 60 0 50 M110 150 Q120 60 170 40 M110 150 Q180 90 250 130 M110 150 Q170 140 230 190" stroke-width="9"/>
+        </g>
+        <g transform="translate(900 40) scale(1.15)">
+          <path d="M60 420 Q40 290 0 170" stroke-width="12"/>
+          <path d="M0 170 Q-60 110 -130 150 M0 170 Q-50 80 -110 70 M0 170 Q10 80 60 60 M0 170 Q70 110 140 150 M0 170 Q60 160 120 210" stroke-width="9"/>
+        </g>
+      </g>
+      <rect y="400" width="1200" height="20" fill="#12051f"/>
+    </svg>
+    <div class="hero-text" data-depth="6">
+      <p class="kicker">Portfolio · Bengaluru</p>
+      <h1>Tanushree</h1>
+      <p class="lead">Software and AI projects, built one mission at a time.</p>
+      <nav class="links">
+        <a class="btn" href="#missions">See the projects</a>
+        <a class="btn ghost" href="https://github.com/tekera0">GitHub</a>
+        <a class="btn ghost" href="assets/resume.pdf">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="missions">
+    <section>
+      <h2>Featured</h2>
+      <div class="grid" id="featured"></div>
+    </section>
+    <section>
+      <h2>All projects</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects by category"></div>
+      <div class="grid" id="archive"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Want to work together? <a href="mailto:you@example.com">you@example.com</a></p>
+  </footer>
+
+  <dialog id="modal">
+    <button class="close" id="close" aria-label="Close">×</button>
+    <div id="modal-body"></div>
+  </dialog>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
